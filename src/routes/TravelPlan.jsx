@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './travelPlanStyle.css';
 
-const API_KEY = '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';
+const API_KEY = '5ae2e3f221c38a28845f05b66574956adc3d8513bf59da812dc00bd4';
+//this is the api i have try the openai api key but it didn't work //
 
 export default function TravelPlan() {
     const [search, setSearch] = useState('');
