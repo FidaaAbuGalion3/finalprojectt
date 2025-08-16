@@ -1,0 +1,98 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroMid {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+.heroMid h1{
+    padding-top: 4rem !important;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.heroContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+
+.heroContent h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+
+.heroContent p {
+    font-size: 1.7rem;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.heroContent .show {
+    text-decoration: none;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.heroContent .show:hover {
+    background-color: #735c31;
+    color: white;
+}
+
+.heroContent .hide {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .heroContent h1 {
+        font-size: 1.5rem;
+    }
+    .heroContent p {
+        font-size: 1.2rem;
+    }
+    .heroContent .show {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .heroContent h1 {
+        font-size: 1.3rem;
+    }
+    .heroContent p {
+        font-size: 1rem;
+    }
+    .heroContent .show {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
